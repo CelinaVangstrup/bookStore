@@ -1,0 +1,114 @@
+
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Celina Vangstrup
+ID: S3993396
+Acknowledgement:
+https://www.w3schools.com/html/html_responsive.asp
+https://www.youtube.com/watch?v=lAOkx2yZESY&ab_channel=EasyTutorials
+*/
+
+.book-section {
+    margin: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: auto;
+}
+
+.photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.big-photo{
+    margin: 5px;
+}
+
+
+.small-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.small-photo img{
+    height: auto;
+    max-width: 120px;
+    padding: .5rem;
+
+}
+
+.actions{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.actions p {
+    font-size: 40px;
+    z-index: 6;
+    margin: 20px 0;
+}
+
+iframe{
+    padding: 2rem 0;
+}
+
+
+.actions button {
+    background-color: #c51924;
+    border: #c51924;
+    border-radius: 99px;
+    height: 50px;
+    width: 200px;
+    box-shadow: 2px 2px 2px #d6d5d9;
+    cursor: pointer;
+}
+
+
+.description {
+    max-width: 400px;
+}
+
+@media (max-width: 960px) {
+    .book-section {
+        flex-direction: column;
+        margin-top: 0 ;
+    }
+
+    .big-photo, .small-photo {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .small-photo img {
+
+        padding: .2rem;
+        width: 30%;
+        height: auto;
+    }
+
+    .photos{
+        align-items: center;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    iframe{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .actions {
+       align-items: center;
+    }
+}
+

@@ -1,0 +1,37 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Celina Vangstrup
+ID: S3993396
+Acknowledgement: 
+https://www.w3schools.com/html/html_responsive.asp
+https://www.youtube.com/watch?v=lAOkx2yZESY&ab_channel=EasyTutorials
+https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Breadcrumb_Navigation
+*/
+
+.breadcrumb {
+	margin-bottom: 20px;
+	padding: 20px;
+	position: sticky;
+}
+
+.breadcrumb ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.breadcrumb ul li {
+	display: inline-block;
+}
+
+.breadcrumb ul li:not(:last-child):after {
+	content: ">";
+	margin: 0 5px;
+}
+
+.breadcrumb ul li a {
+	color: #83b0e1;
+	text-decoration: none;
+}

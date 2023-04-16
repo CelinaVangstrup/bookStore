@@ -1,0 +1,32 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Celina Vangstrup
+ID: S3993396
+Acknowledgement: 
+https://www.w3schools.com/html/html_responsive.asp
+https://www.youtube.com/watch?v=lAOkx2yZESY&ab_channel=EasyTutorials
+https://www.w3schools.com/tags/tag_footer.asp
+https://web-eau.net/en/blog/10-best-footer-html-css-snippets
+*/
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #00487c;
+  }
+
+  footer a {
+    text-decoration: underline;
+    color: #83b0e1;
+    padding: 5px;
+  }

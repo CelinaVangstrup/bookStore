@@ -1,0 +1,140 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Celina Vangstrup
+ID: S3993396
+Acknowledgement: 
+https://www.w3schools.com/html/html_responsive.asp
+https://www.youtube.com/watch?v=lAOkx2yZESY&ab_channel=EasyTutorials
+https://www.w3schools.com/howto/howto_css_responsive_header.asp
+https://www.youtube.com/watch?v=WAIfQOR9bh4
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+nav{
+  background-color: #83b0e1;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #00487c;
+
+  top: 0;
+  position: sticky;
+  z-index: 50;
+
+}
+
+.logo{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: 5px;
+
+}
+
+.navigation-links{
+  padding: 24px 0;
+  margin-right: 150px;
+  
+}
+
+.navigation-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navigation-links li a{
+  color: #00487c;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 0;
+  position: relative;
+  text-decoration: none;
+}
+
+.navigation-links li a::after{
+  content: '';
+  background: #00487c;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s;
+}
+
+.navigation-links li a:hover::after{
+  width: 100%;
+}
+
+
+.toggle-button{
+position: absolute;
+top: 1.75rem;
+right: 2rem;
+display: none;
+flex-direction: column;
+justify-content: space-between;
+width: 40px;
+height: 31px;
+}
+
+.toggle-button .line{
+height: 4px;
+width: 100%;
+background-color: aliceblue;
+border-radius: 10px;
+
+}
+
+@media (max-width: 960px) {
+  .toggle-button{
+    display: flex;
+  }
+
+
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .navigation-links {
+    padding-top: 0;
+    padding-bottom: 20px;
+    width: 100%;
+    flex-direction: column;
+    display: none;
+  }
+
+  .navbar ul {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+  }
+
+
+  .navigation-links li {
+    text-align: center;
+    padding-top: .5rem;
+
+  }
+
+    .navigation-links.active {
+      
+      display: flex;
+  }
+
+}
+  
+

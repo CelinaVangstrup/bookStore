@@ -1,0 +1,100 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Celina Vangstrup
+ID: S3993396
+Acknowledgement: 
+https://www.w3schools.com/html/html_responsive.asp
+https://www.youtube.com/watch?v=lAOkx2yZESY&ab_channel=EasyTutorials
+https://www.w3schools.com/css/css_form.asp
+https://www.youtube.com/watch?v=8yrTnjo0TWw
+*/
+
+
+
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  body {
+    background-color: #f2f2f2;
+    
+  }
+ 
+  
+
+  
+  form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 15px auto;
+    max-width: 600px;
+    padding: 15px 30px 30px 30px;
+
+  }
+  
+  form h1 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  form select,
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form input[type="checkbox"],
+  form input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  form button[type="submit"],
+  form button[type="reset"] {
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  form button[type="submit"]:hover,
+  form button[type="reset"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  @media screen and (max-width: 960px) {
+    form label {
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+  
+    form select,
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form textarea {
+      margin-bottom: 10px;
+    }
+  }
+  

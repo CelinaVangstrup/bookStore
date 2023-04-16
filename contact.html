@@ -1,0 +1,115 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Celina Vangstrup
+ID: S3993396
+Acknowledgement: 
+https://www.w3schools.com/html/html_responsive.asp
+https://www.youtube.com/watch?v=lAOkx2yZESY&ab_channel=EasyTutorials
+https://www.w3schools.com/css/css_form.asp
+https://www.youtube.com/watch?v=8yrTnjo0TWw -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us - book store</title>
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <script type="text/javascript" src="script.js"></script>
+
+    <title>Contact Us</title>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <img class="logo" src="images/logo.png" alt="business logo">
+        <a href="#" class="toggle-button">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </a>
+        <article class="navigation-links">
+        <ul >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">Categories</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
+        </ul>
+
+        </article>
+    </nav>
+
+
+        <form action="#" method="post">
+            <h1>Contact Us</h1>
+
+            <div>
+                <label for="contact-purpose">Contact Purpose*</label>
+                <select name="contact-purpose" id="contact-purpose" required>
+                    <option value="">Select an option</option>
+                    <option value="sell">I want to sell books</option>
+                    <option value="buy">I want to buy books</option>
+                </select>
+            </div>
+            <div>
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone*</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <p>Contact preference*</p>
+                <input type="checkbox" id="email-pref" name="contact-pref" value="email" >
+                <label for="email-pref">By email</label>
+                <input type="checkbox" id="phone-pref" name="contact-pref" value="phone" >
+                <label for="phone-pref">By phone</label>
+            </div>
+            <div>
+                <p>Receive weekly newsletter*</p>
+                <input type="radio" id="yes-newsletter" name="newsletter" value="yes" checked>
+                <label for="yes-newsletter">Yes</label>
+                <input type="radio" id="no-newsletter" name="newsletter" value="no">
+                <label for="no-newsletter">No</label>
+            </div>
+            <div>
+                <label for="notes">Extra Notes</label>
+                <textarea id="notes" name="notes"></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+
+        <footer>
+            <section class="footer">
+                <a href="">About Us</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms</a>
+                <a href="contact.html">Contact Us</a>
+    
+            </section>
+            <span>Copyright &copy; 2023 Celina Vangstrup</span>
+        </footer>
+  
+
+
+
+
+
+</body>
+
+</html>
